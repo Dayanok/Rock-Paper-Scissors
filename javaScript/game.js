@@ -1,6 +1,5 @@
 function computerOptions(){
   const computerSelection= Math.floor(Math.random()*3);
-  console.log(computerSelection)
   switch(computerSelection){
     case 0:
         return "rock";
@@ -35,7 +34,6 @@ function playerSelectionPrompt(roundNumber){
 function playround(roundNumber){
     const computerSelection=computerOptions();
     const playerSelection=playerSelectionPrompt(roundNumber);
-    console.log("p",playerSelection,"c",computerSelection)
     let outcome = comperSelections(playerSelection,computerSelection);
     if(outcome==="draw"){
         alert(`Its a draw! you both picked ${computerSelection}`)
